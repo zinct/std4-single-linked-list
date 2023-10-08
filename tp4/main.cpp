@@ -6,9 +6,39 @@
 //
 
 #include <iostream>
+#include "list.h"
 
-int main(int argc, const char * argv[]) {
-    // insert code here...
-    std::cout << "Hello, World!\n";
+using namespace std;
+
+int main() {
+    List L;
+    int inputInt;
+    address P;
+    
+    createList_1302220067(L);
+    
+    cout << "Masukan angka 1 yg akan di input ke list: ";
+    cin >> inputInt;
+    
+    P = allocate_1302220067(inputInt);
+    insertFirst_1302220067(L, P);
+    printInfo_1302220067(L);
+    
+    
+    
+    cout << "Masukan angka 2 yg akan di input ke list: ";
+    cin >> inputInt;
+    
+    P = allocate_1302220067(inputInt);
+    insertFirst_1302220067(L, P);
+    printInfo_1302220067(L);
+    
+    cout << "Masukan angka 3 yg akan di input ke list: ";
+    cin >> inputInt;
+    
+    P = allocate_1302220067(inputInt);
+    insertFirst_1302220067(L, P);
+    printInfo_1302220067(L);
+    
     return 0;
 }
